@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="state">select city</label>
+        <select name="state" id="state">
+          <option value="patna">patna</option>
+          <option value="hazipur">hazipur</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="state">select state</label>
+        <select name="state" id="state">
+          <optgroup label="country1">
+            <option value="patna">patna</option>
+            <option value="hazipur">hazipur</option>
+          </optgroup>
+          <optgroup label="up">
+            <option value="patna">patna</option>
+            <option value="hazipur">hazipur</option>
+          </optgroup>
+        </select>
+      </div>
+      <label for="comments"></label>
+      <textarea name="comments" id="comments" cols="3" rows="4"></textarea>
+    </form>
+
+    <div>
+      <form action="">
+        <fieldset>
+          <legend>Employee</legend>
+          <label for="employee">Emp Name</label>
+          <input
+            type="text"
+            placeholder="name.."
+            id="employee"
+            name="employee"
+          /><br />
+          <label for="email"></label>
+          <input type="email" placeholder="email" id="email" /><br />
+        </fieldset>
+        <fieldset>
+          <legend>User</legend>
+          <label for="user">User</label>
+          <input type="text" placeholder="username" id="user" /><br />
+          <label for="email"></label>
+          <input type="email" placeholder="useremail" id="email" />
+          <button type="submit">login</button>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <label for="country"></label>
+      <input type="text" name="country" id="country" list="datalist" />
+      <datalist id="datalist">
+        <option value="India">India</option>
+        <option value="China">China</option>
+        <option value="Bhutan">Bhutan</option>
+      </datalist>
+    </div>
+  </body>
+</html>
